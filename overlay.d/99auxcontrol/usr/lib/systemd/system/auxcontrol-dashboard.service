@@ -1,0 +1,10 @@
+[Unit]
+Description=AuxControl Dashboard
+
+[Service]
+Restart=always
+ExecStartPre=/usr/bin/podman load -i /usr/lib/auxcontrol/containers/grafana.tar
+ExecStart=/usr/bin/podman run --rm grafana-oss
+
+[Install]
+WantedBy=default.target

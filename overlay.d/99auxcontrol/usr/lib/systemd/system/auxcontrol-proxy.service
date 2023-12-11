@@ -1,0 +1,10 @@
+[Unit]
+Description=AuxControl Proxy
+
+[Service]
+Restart=always
+ExecStartPre=/usr/bin/podman load -i /usr/lib/auxcontrol/containers/proxy.tar
+ExecStart=/usr/bin/podman run --rm --publish 80:80 auxcontrol-proxy
+
+[Install]
+WantedBy=default.target

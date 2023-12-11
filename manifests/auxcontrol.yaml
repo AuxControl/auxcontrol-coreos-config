@@ -1,0 +1,8 @@
+packages:
+  - cockpit
+  - cockpit-podman
+  - cockpit-ostree
+  - cockpit-networkmanager
+    
+ostree-layers:
+  - overlay/99auxcontrol

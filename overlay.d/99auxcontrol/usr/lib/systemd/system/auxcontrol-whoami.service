@@ -1,0 +1,10 @@
+[Unit]
+Description=AuxControl Whoami 
+
+[Service]
+Restart=always
+ExecStartPre=/usr/bin/podman load -i /usr/lib/auxcontrol/containers/whoami.tar
+ExecStart=/usr/bin/podman run --rm traefik/whoami
+
+[Install]
+WantedBy=default.target

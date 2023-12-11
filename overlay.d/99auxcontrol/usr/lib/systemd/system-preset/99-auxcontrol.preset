@@ -1,0 +1,5 @@
+enable cockpit.service
+enable cockpit.socket
+enable auxcontrol-proxy.service
+enable auxcontrol-dashboard.service
+enable auxcontrol-whoami.service
