@@ -3,6 +3,9 @@ packages:
   - cockpit-podman
   - cockpit-ostree
   - cockpit-networkmanager
+
+repos:
+  - fedora
     
 ostree-layers:
   - overlay/99auxcontrol
