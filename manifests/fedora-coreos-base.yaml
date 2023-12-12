@@ -10,6 +10,7 @@ include:
   - networking-tools.yaml
   - user-experience.yaml
   - shared-workarounds.yaml
+  - auxcontrol.yaml
 
 ostree-layers:
   - overlay/05core
