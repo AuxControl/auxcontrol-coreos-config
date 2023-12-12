@@ -7,4 +7,5 @@ ExecStartPre=/usr/bin/podman load -i /usr/lib/auxcontrol/containers/proxy.tar
 ExecStart=/usr/bin/podman run --rm --publish 80:80 auxcontrol-proxy
 
 [Install]
+After=network.target
 WantedBy=default.target

@@ -4,4 +4,6 @@ variables:
 
 releasever: 39
 
-include: manifests/fedora-coreos.yaml
+include: 
+  - manifests/fedora-coreos.yaml
+  - manifests/auxcontrol.yaml
