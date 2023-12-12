@@ -1,6 +1,3 @@
-lockfile-repos:
-  - fedora-coreos-pool
-
 packages:
   - cockpit
   - cockpit-podman
